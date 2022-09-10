@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Playground</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /* Main CSS */
+        .box1{
+            height: 200px;
+            width: 300ox;
+            background: #0FA445;
+            background: -moz-linear-gradient(left, #0FA445 0%, #9451CB 44%, #497547 100%);
+            background: -webkit-linear-gradient(left, #0FA445 0%, #9451CB 44%, #497547 100%);
+            background: linear-gradient(to right, #0FA445 0%, #9451CB 44%, #497547 100%);
+        }
+        .box2{
+            height: 200px;
+            width: 500px;
+            background-color: #e98e18;
+
+        }
+        .section1{
+            height: 500px;
+            background-color: aqua;
+            background-image: url('assets/image/hh.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .section2{
+            height: 100vh;
+            background-color: yellow;
+        }
+        .section2 .para{
+            font-size: 3rem;
+            margin: 0;
+            padding: 2rem;
+            color: #556677;
+            background: #537ba3;
+            letter-spacing: .1em;
+        
+
+            box-shadow: 44px -1px 67px 6px rgba(0,0,0,0.76); ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>    <!--Shortcut (.box1 for making class in div tag)-->
+    <div class="box2"></div>
+    <div class="section1"></div>
+    <div class="section2">
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea deleniti eos sequi molestiae rerum. Nobis illo, obcaecati, corrupti ipsam dolore provident quisquam ea impedit libero, ad perferendis cumque non quas.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Sample</title>
+    <style>
+        @keyframes wobble {
+            0%{
+                rotate: -10%;
+                border: 300px;
+
+            }
+            25%{
+                rotate: 10deg;
+                transform: skewY(-5deg);
+                box-shadow: 2px 6px 2px black;
+
+            }
+            50%{
+                rotate: 10%;
+
+            }
+            75%{
+                rotate: 10deg;
+                transform: skew(5deg);
+            }
+            100%{
+                rotate: -10px;
+                transform: skewY(0);
+                box-decoration-break: 1px 1px 4px black;
+                border-radius: 0px;
+            }
+            /* from{
+                /* background-color: red; */
+                /* box-shadow: 0 0 1000px red;
+            } */
+            /* to{ */
+                /* background-color: green; */
+                /* box-shadow: 0 0 3px rgb(10, 167, 18); */
+
+            /* } */ */
+        }
+        .container{
+            display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /*1fr 1fr 1fr 1fr;/*  OR 25% 25% 25% 25%; */
+             gap: 1rem;
+        }
+        .image{
+            box-shadow: 0 0 5px #333;
+            padding: 1rem;
+            text-align: center;
+            /* scale: .5;
+            rotate: 45deg; */
+            transition: all 250ms ease;
+            animation: wobble 1s ease   infinite;
+        }
+        .image:hover {
+            transform: rotate(10deg);
+            /* background-color: aquamarine; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"><img src="assets/image/pro1 (1).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (13).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (14).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (15).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (16).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (17).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (18).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (19).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (20).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (21).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (22).jpeg" alt="" width="300"></div>
+        <div class="image"><img src="assets/image/pro1 (23).jpeg" alt="" width="300"></div>
+    </div>
+</body>
+</html>
