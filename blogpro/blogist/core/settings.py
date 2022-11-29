@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'blog',
     'django_bootstrap5',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
